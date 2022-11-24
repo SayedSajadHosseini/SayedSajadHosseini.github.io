@@ -1,0 +1,148 @@
+body{
+    background-color: rgb(238, 238, 236);
+}
+
+.main {
+    width: 100px;
+    margin: 0 auto;
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 100px;
+	height: 50px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #bada55;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 130px;
+}
+
+.card {
+    margin: 0 auto;
+    background-color: rgb(255, 255, 254);
+    width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 7px 7px 10px rgb(231, 228, 228);
+}
+.img{
+    border-radius: 50%;
+    width: 150px;
+    margin: 10px;
+    box-shadow: 4px 4px 10px rgb(231, 228, 228);
+}
+.name{
+    font-size: 20px;
+    font-family: 'Courgette';
+    margin: 10px 0 0 0;
+    padding: 0;
+    color:rgb(68, 66, 66);
+}
+.spe{
+    font-size: 15px;
+    padding-bottom: 4px;
+    margin: 4px 0 0 0;
+    padding: 0;
+    color: #858684;
+    font-family: 'Rubik';
+    text-transform: uppercase;
+}
+.desc{
+    font-size: 13px;
+    padding: 15px;
+    margin: 0;
+    color: #646564;
+    font-family: 'Rubik';
+    line-height: 18px;
+}
+.btn{
+    background-color: #bada55;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Rubik';
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition-duration: 0.4s;
+}
+.btn:hover{
+    background-color: white;
+    color: #bada55;
+    border: 1px solid #bada55;
+}
+.line{
+    border-bottom: 1px solid rgba(192, 217, 105, 0.4);
+    width: 340px;
+    margin: 0 auto;
+    padding: 7px;
+}
+ul{
+    padding-inline-start: 0;
+}
+ul li {
+    display: inline;
+}
+.follow{
+    padding-bottom: 2px;
+}
+.follow a {
+    text-decoration: none;
+    color: #bada55;
+    font-size: 30px;
+    margin: 0 30px;
+}
+footer{
+    bottom: 5px;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Rubik';
+    font-size: 13px;
+    color:#858684;
+}
+.dark-mode {
+    background-color: rgb(45, 43, 82);
+}
+.dark-mode-card{
+    background-color: rgb(30, 30, 61);
+    box-shadow: 7px 7px 10px rgb(43, 42, 42);
+}
+.dark-mode-img{
+    box-shadow: 7px 7px 10px rgb(43, 42, 42);
+}
