@@ -1,121 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Fontawesome Stylesheet -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v6.2.0/css/all.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <meta name="description" content="Hello i am a softwa" />
-    <title>Sayed Sajad Hosseini</title>
-  </head>
-  <body>
-    <div style="height: 20px"></div>
-    <div class="main">
-      <input type="checkbox" id="switch" onclick="myFunction()" /><label
-        for="switch"
-        >Toggle</label
-      >
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fontawesome Stylesheet -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="description" content="Hello i am a softwa" />
+  <title>Sayed Sajad Hosseini</title>
+</head>
+
+<body>
+  <div style="height: 20px"></div>
+  <div class="main">
+    <input type="checkbox" id="switch" onclick="myFunction()" /><label for="switch">Toggle</label>
+  </div>
+  <div style="height: 30px"></div>
+  <div class="wel" id="welcome"></div>
+  <div class="card">
+    <!-- https://avatars.githubusercontent.com/u/37949904?v=4 -->
+    <img class="img"
+      src="https://media-exp1.licdn.com/dms/image/C4E03AQG7xT0pSVC2Kw/profile-displayphoto-shrink_400_400/0/1649835229950?e=1672272000&v=beta&t=eMoi5vwBrWLWuQS8oFJu20TwHf_PVYEAkNMGzgKnIs4"
+      alt="my avatar" />
+
+    <a href="profile/doc/sayedSajadHosseini.pdf" download style="text-decoration: none">
+      <p class="name">SAYED SAJAD HOSSEINI</p>
+    </a>
+    <p class="spe">Software Engineer</p>
+
+    <p class="desc">
+      My name is Seyed Sajad Hosseini. I am from Afghanistan and 24 years
+      old.I love programming and love learning new things.I am a full stack
+      developer and I can work in front end and back end.I have been living in
+      Rome for a year now, I can work as a freelancer. Living in Italy will be
+      the best experience of my life!
+    </p>
+    <a href="mailto:sajadoncode@gmail.com" class="btn">Hire Me!</a><br />
+
+    <div class="line"></div>
+
+    <!-- follow me -->
+    <div class="follow">
+      <ul>
+        <li>
+          <a href="https://github.com/SayedSajadHosseini" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/sajad-hosseini-211961237/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://stackoverflow.com/users/9180837/sayed-sajad-hosseini" target="_blank">
+            <i class="fa-brands fa-stack-overflow"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
     </div>
-    <div style="height: 30px"></div>
-    <div class="wel" id="welcome"></div>
-    <div class="card">
-      <!-- https://avatars.githubusercontent.com/u/37949904?v=4 -->
-      <img
-        class="img"
-        src="https://media-exp1.licdn.com/dms/image/C4E03AQG7xT0pSVC2Kw/profile-displayphoto-shrink_400_400/0/1649835229950?e=1672272000&v=beta&t=eMoi5vwBrWLWuQS8oFJu20TwHf_PVYEAkNMGzgKnIs4"
-        alt="my avatar"
-      />
+  </div>
+  <footer>
+    COPYRIGHT:
+    <span id="current-year"></span>
+    <i class="fa-sharp fa-solid fa-copyright"></i> - CODE WITH
+    <i class="fa-sharp fa-solid fa-heart" style="color: red"></i> BY
+    <span style="color: black">SAYED SAJAD HOSSEINI</span>
+  </footer>
+</body>
 
-      <a
-        href="profile/doc/sayedSajadHosseini.pdf"
-        download
-        style="text-decoration: none"
-      >
-        <p class="name">SAYED SAJAD HOSSEINI</p>
-      </a>
-      <p class="spe">Software Engineer</p>
+<script>
+  function myFunction() {
+    console.log("sdfdf");
+    var element = document.body;
+    var card = document.querySelector(".card");
+    var img = document.querySelector("img");
+    element.classList.toggle("dark-mode");
+    card.classList.toggle("dark-mode-card");
+    img.classList.toggle("dark-mode-img");
+  }
 
-      <p class="desc">
-        My name is Seyed Sajad Hosseini. I am from Afghanistan and 24 years
-        old.I love programming and love learning new things.I am a full stack
-        developer and I can work in front end and back end.I have been living in
-        Rome for a year now, I can work as a freelancer. Living in Italy will be
-        the best experience of my life!
-      </p>
-      <a href="mailto:sajadoncode@gmail.com" class="btn">Hire Me!</a><br />
+  const year = document.querySelector("#current-year");
+  year.innerHTML = new Date().getFullYear();
+</script>
 
-      <div class="line"></div>
-
-      <!-- follow me -->
-      <div class="follow">
-        <ul>
-          <li>
-            <a href="https://github.com/SayedSajadHosseini" target="_blank">
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/sajad-hosseini-211961237/"
-              target="_blank"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://stackoverflow.com/users/9180837/sayed-sajad-hosseini"
-              target="_blank"
-            >
-              <i class="fa-brands fa-stack-overflow"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <footer>
-      COPYRIGHT:
-      <span id="current-year"></span>
-      <i class="fa-sharp fa-solid fa-copyright"></i> - CODE WITH
-      <i class="fa-sharp fa-solid fa-heart" style="color: red"></i> BY
-      <span style="color: black">SAYED SAJAD HOSSEINI</span>
-    </footer>
-  </body>
-
-  <script>
-    function myFunction() {
-      console.log("sdfdf");
-      var element = document.body;
-      var card = document.querySelector(".card");
-      var img = document.querySelector("img");
-      element.classList.toggle("dark-mode");
-      card.classList.toggle("dark-mode-card");
-      img.classList.toggle("dark-mode-img");
-    }
-
-    const year = document.querySelector("#current-year");
-    year.innerHTML = new Date().getFullYear();
-  </script>
 </html>
